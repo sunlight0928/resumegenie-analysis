@@ -6,7 +6,7 @@ router = APIRouter()
 
 
 # @router.post("/analyse", response_model=ResponseSchema)
-@router.post("/analysis/matching/analyse")
+@router.post("/analysis/analyse")
 async def analyse_matching(matching_data: MatchingSchema):
     result = service.analyse_matching(matching_data=matching_data)
 

@@ -5,7 +5,7 @@ router = APIRouter()
 
 
 # @router.post("/analyse", response_model=ResponseSchema)
-@router.post("/analysis/candidate/analyse")
+@router.post("/analysis/analyse")
 async def analyse_candidate(file: UploadFile = File(...)):
     # if file.content_type != 'application/json':
     #     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Wow, That's not allowed")
