@@ -6,7 +6,7 @@ router = APIRouter()
 
 
 # @router.post("/analyse", response_model=ResponseSchema)
-@router.post("/analyse")
+@router.post("/analysis/job/analyse")
 async def analyse_job(job_data: JobSchema):
     result = service.analyse_job(job_data=job_data)
 
